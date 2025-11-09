@@ -1,1 +1,3 @@
 /storage/storage.db
+commands/url-shortener/config/local.yaml
+path.env
