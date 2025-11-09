@@ -3,10 +3,10 @@ package test
 import (
 	"net/http/httptest"
 	"testing"
-	"url-shortener/internal/http-server/handlers/url/redirect"
-	"url-shortener/internal/http-server/handlers/url/redirect/mocks"
-	"url-shortener/internal/logging"
-	"url-shortener/internal/redirectCheck"
+	"url-shortener2/internal/http-server/handlers/url/redirect"
+	"url-shortener2/internal/http-server/handlers/url/redirect/mocks"
+	"url-shortener2/internal/logging"
+	"url-shortener2/internal/redirectCheck"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/stretchr/testify/require"

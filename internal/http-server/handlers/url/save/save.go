@@ -3,10 +3,10 @@ package save
 import (
 	"errors"
 	"net/http"
-	"url-shortener/internal/logging"
-	"url-shortener/internal/random"
-	"url-shortener/internal/response"
-	"url-shortener/internal/storage"
+	"url-shortener2/internal/logging"
+	"url-shortener2/internal/random"
+	"url-shortener2/internal/response"
+	"url-shortener2/internal/storage"
 
 	"log/slog"
 

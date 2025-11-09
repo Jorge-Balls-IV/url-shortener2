@@ -5,13 +5,13 @@ import (
 	"log/slog"
 	"net/http"
 	"os"
-	"url-shortener/internal/config"
-	"url-shortener/internal/http-server/handlers/url/redirect"
-	"url-shortener/internal/http-server/handlers/url/remove"
-	"url-shortener/internal/http-server/handlers/url/save"
-	"url-shortener/internal/http-server/middleware/httpLogger"
-	"url-shortener/internal/logging"
-	"url-shortener/internal/storage/sqlite"
+	"url-shortener2/internal/config"
+	"url-shortener2/internal/http-server/handlers/url/redirect"
+	"url-shortener2/internal/http-server/handlers/url/remove"
+	"url-shortener2/internal/http-server/handlers/url/save"
+	"url-shortener2/internal/http-server/middleware/httpLogger"
+	"url-shortener2/internal/logging"
+	"url-shortener2/internal/storage/sqlite"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
@@ -44,7 +44,7 @@ func main() {
 	router.Use(middleware.URLFormat)   //Позволяет парсить параметры URL
 
 	// Создаём роутер для авторизации - Мы привносим в наш роутер новую логику для авторизации
-	router.Route("/url", func(r chi.Router){
+	router.Route("/url", func(r chi.Router) {
 		r.Use(middleware.BasicAuth("url-shortener", map[string]string{
 			cnfg.ServerHTTP.User: cnfg.ServerHTTP.Password,
 		}))

@@ -5,9 +5,9 @@ import (
 	"net/url"
 	"path"
 	"testing"
-	"url-shortener/internal/random"
-	"url-shortener/internal/redirectCheck"
-	"url-shortener/internal/response"
+	"url-shortener2/internal/random"
+	"url-shortener2/internal/redirectCheck"
+	"url-shortener2/internal/response"
 
 	"github.com/brianvoe/gofakeit/v7"
 	"github.com/gavv/httpexpect/v2"

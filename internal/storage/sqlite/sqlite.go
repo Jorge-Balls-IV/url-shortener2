@@ -3,7 +3,7 @@ package sqlite
 import (
 	"database/sql"
 	"fmt"
-	"url-shortener/internal/storage"
+	"url-shortener2/internal/storage"
 
 	"github.com/mattn/go-sqlite3"
 )

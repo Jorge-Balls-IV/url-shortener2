@@ -4,9 +4,9 @@ import (
 	"errors"
 	"log/slog"
 	"net/http"
-	"url-shortener/internal/logging"
-	"url-shortener/internal/response"
-	"url-shortener/internal/storage"
+	"url-shortener2/internal/logging"
+	"url-shortener2/internal/response"
+	"url-shortener2/internal/storage"
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
